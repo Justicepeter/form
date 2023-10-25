@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* my css below */
+
+.pform {
+  /* border: solid red 1px; */
+  width: 34%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 30px auto;
+  margin-top: 30px;
+  box-shadow: 2px 2px 4px #ccc;
+  border: solid 1px #ccc;
+}
+
+.inputstyle {
+  margin-bottom: 10px;
+}
+
+.myformcontrol {
+  width: 100%;
+  padding: 8px;
+}
+
+.myheader {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.mybtn {
+  width: 20%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.mybtn-primary {
+  background-color: blue;
+  padding: 10px;
+  border: none;
+}
+
+.mybtn-danger {
+  background-color: red;
+  padding: 10px;
+  border: none;
+}
+
+/* how the "message" class could be done */
+/* 
+.message{
+
+display: block;
+} */
+
+/* or you can go to the html and put the "label and inputbox" holding your message inside a div */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      /* affecting every paragraph in the div */
+      div p {
+        background-color: red;
+      }
+
+      /* affecting the direct child of the div */
+      div > p {
+        background-color: blue;
+      }
+
+      /* affecting the paragraph directly after th div element */
+
+      div + p {
+        background-color: aqua;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form class="pform" action="">
+      <h2 class="myheader">Sign up here</h2>
+
+      <div class="inputstyle">
+        <label for="">Name</label>
+        <input class="myformcontrol" type="text" required />
+      </div>
+
+      <div class="inputstyle">
+        <label for="">Email</label>
+        <input class="myformcontrol" type="email" required />
+      </div>
+
+      <div class="inputstyle">
+        <label for="">Password</label>
+        <input class="myformcontrol" type="password" required />
+      </div>
+
+      <label for="">country</label>
+      <select name="" id="country" class="myformcontrol">
+        <option value="">Choose country</option>
+        <option value="">United Arab Emirates</option>
+        <option value="">Switzerland</option>
+        <option value="">Brazil</option>
+        <option value="">Japan</option>
+        <option value="">Italy</option>
+        <option value="">Germany</option>
+      </select>
+
+      <div class="pformg">
+        <label for="">Choose the program you offer</label>
+
+        <div class="mycheckbox">
+          <input type="checkbox" id="html" />
+          <label for="">Html</label>
+        </div>
+
+        <div class="mycheckbox">
+          <input type="checkbox" id="css" />
+          <label for="">Css</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="javascript" />
+          <label for="">Javascript</label>
+        </div>
+        <div>
+          <input type="checkbox" id="python" />
+          <label for="">Python</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="jquerry" />
+          <label for="jquerry">Jquerry</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="react" />
+          <label for="">React</label>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <label class="message" for="message">Message</label>
+        </div>
+        <textarea
+          name=""
+          id="message"
+          cols="50"
+          rows="5"
+          placeholder="Your message"
+        ></textarea>
+      </div>
+      <div>
+        <input class="mybtn mybtn-primary" type="summit" value="Register" />
+        <input class="mybtn mybtn-danger" type="reset" value="Reset" />
+      </div>
+    </form>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <ul>
+        <li>item 1</li>
+        <li>
+          <p>item 2</p>
+        </li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, earum!
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ea id vero.
+    </p>
+  </body>
+</html>
